@@ -8,7 +8,7 @@ cat <<EOL > .devcontainer/devcontainer.json
             "version": "latest"
         }
     },
-    "postStartCommand": "python3 /workspaces/your repo name/g.py",
+    "postStartCommand": "python3 /workspaces/paidfuck/g.py",
     "customizations": {
         "vscode": {
             "settings": {
