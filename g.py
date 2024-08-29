@@ -46,8 +46,8 @@ async def run_attack_command_on_codespace(target_ip, target_port, duration):
         )
         running_processes.append(process)
         stdout, stderr = await process.communicate()
-        output = stdout.decode()
-        error = stderr.decode()
+        output = stdout.decode('latin-1')
+        error = stderr.decode('latin-1')
 
         if output:
             logging.info(f"Command output: {output}")
